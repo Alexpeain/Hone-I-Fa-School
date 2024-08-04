@@ -110,11 +110,13 @@ header {
     text-align: center;
     display: flex;
     justify-content: center;
-    background: blanchedalmond;
+    background: #f3703c;
+    /* background: blanchedalmond; */
 }
 
 .header .header-2 .navbar a:hover {
-    background: var(--salmon);
+    background-color: blanchedalmond;
+    /* background: var(--salmon); */
     border-radius: 10%;
 }
 
@@ -128,7 +130,7 @@ header {
 
 /* Homepage */
 .homepage{
-    background: blanchedalmond;
+    background:#f3703c;     /* blanchedalmond; */
     /* min-height: 100vh; */
     display: flex;
     flex-wrap: wrap;
@@ -142,7 +144,8 @@ header {
     padding-top: 3.5rem;
 }
 .homepage .motto h3{
-    font-size: 4rem;
+    font-size: 3rem;
+    margin-top: 4rem;
     color: var(--black);
 
 }
@@ -151,8 +154,8 @@ header {
     
 }
 .homepage .motto p{
-    font-size: 2.7rem;
-    color: var(--light-salmon);
+    font-size: 2.5rem;
+    color: white;
 }
 .homepage .image {
     flex: 1 1 40rem;
@@ -351,6 +354,26 @@ header {
     border: .1rem solid var(--light-salmon);
     background: var(--light-salmon);
 }
+/* button */
+
+  .btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #f3703c;
+    transition: background-color 0.3s ease;
+  }  
+  .btn:hover {
+    background-color: #e07823; /* Change the background color on hover */
+  }
+  .hidden {
+    display: none;
+  }
 /* Contact */
 
 .container {
@@ -442,7 +465,7 @@ header {
 /* footer */
 /* Footer Styles */
 footer {
-  background-color: var(--light-salmon);
+  background-color: #f3703c;
   color: #fff;
   padding: 20px 0;
   text-align: center;

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hone I Fa</title>
+    <link rel="icon" type="image/x-icon" href="./images/HoneIFa/logo.jpg">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
@@ -125,42 +126,7 @@
               </div>
             </div>
             
-      </section>
-      <!-- <section class="Curriculum">
-        <div class="col-md-6">
-          <h3>Curriculum</h3>
-          <div class="accordion" id="curriculumAccordion">
-            <div class="accordion-item">
-              <h4 class="accordion-header" id="headingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  KG Curriculum
-                </button>
-              </h4>
-              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#curriculumAccordion">
-                <div class="accordion-body">
-                  <p>Detailed information about the KG curriculum</p>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h4 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Class 1 Curriculum
-                </button>
-              </h4>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#curriculumAccordion">
-                <div class="accordion-body">
-                  <p>Detailed information about the Class 1 curriculum</p>
-                </div>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-    </section> -->
-      
+      </section>     
       <!-- Academic Programs -->
       <section id="academic-programs">
         <h2>Academic Programs</h2>
@@ -189,62 +155,14 @@
         </div>
       </section>
       <!-- Teachers -->
+
     <section class="teacher" id="teacher">
-      <h1 class="heading">Our<span> Teachers</span></h1>
-      <div class="box-container">
-        <div class="box">
-          <img src="" alt="">
-          <h3> Sai Noi</h3>
-          <p>Founder</p>
-          <div class="share">
-            <a href="mailto:example@example.com" class="email-link">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/gmail.svg" alt="Email" width="24" height="24">
-            </a>
-          </div>
+        <h1 class="heading">Our<span> Teachers</span></h1>
+        <div class="box-container" id="teacher-container">
+          <!-- Teacher boxes will be dynamically generated here -->
         </div>
-        <div class="box">
-          <img src="" alt="">
-          <h3> Sai Zaw Oo</h3>
-          <p>School Management</p>
-          <div class="share">
-            <a href="mailto:example@example.com" class="email-link">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/gmail.svg" alt="Email" width="24" height="24">
-            </a>
-          </div>
-        </div>
-      <div class="box">
-        <img src="" alt="">
-        <h3>Nang Kham Hlean</h3>
-        <p> Teacher</p>
-        <div class="share">
-          <a href="mailto:example@example.com" class="email-link">
-            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/gmail.svg" alt="Email" width="24" height="24">
-          </a>
-        </div>
-      </div>
-      <div class="box">
-        <img src="" alt="">
-        <h3>Nang </h3>
-        <p>School Admin</p>
-        <div class="share">
-          <a href="mailto:example@example.com" class="email-link">
-            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/gmail.svg" alt="Email" width="24" height="24">
-          </a>
-        </div>
-      </div>
-      <div class="box">
-        <img src="" alt="">
-        <h3> Nang Seng Lean Peain
-          <p>IT related</p>
-          <div class="share">
-            <a href="mailto:example@example.com" class="email-link">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/gmail.svg" alt="Email" width="24" height="24">
-            </a>
-          </div>
-        </h3>
-      </div>
-  </div>
-</section>
+        <button id="see-more-btn" class="btn">See More</button>
+      </section>
 
       <!-- Photo Gallary -->
       <section class="gallery" id="gallery" >
@@ -280,8 +198,9 @@
             <h2>Contact Us</h2>
             <p>Get in touch with us for any inquiries</p>
             <ul>
-              <li>OFFICE Phone: +95-09769631931, +95-444719589 </li>
+              <li>OFFICE Phone: +95-09769631931, +95-444719589 ,+95-9259284134 </li>
               <li>No.(97), Near Fire Service, Ho Nong, Nam Kham Township</li>
+              <li>No.kanama-72/B,Pyi Taung Su Rd,Namkham Township,North Shan State,Myanmar</li>
               <li>
                 <a href="https://www.facebook.com/honeifa?mibextid=ZbWKwL" target="_blank">
                   <img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/facebook.svg" alt="Facebook" width="24" height="24">
@@ -335,9 +254,164 @@
               licenseImage.style.display = 'none';
           }
       }
-      
-      </script>
-    </main>
+      // see more button
+    const teacherContainer = document.getElementById('teacher-container');
+    const seeMoreBtn = document.querySelector('#see-more-btn');
+    const teachers = [
+    {
+        "name": "Sai Noi",
+        "title": "Founder",
+        "email": "saturdaysai9@gmail.com",
+    },
+    {
+        "name": "Sai Zaw Oo",
+        "title": "School Management",
+        "email": "saizawoo.pl@gmail.com",
+    },
+    {
+        "name": "Nang Hom Kham",
+        "title": "School Admin",
+        "email": "nanghomkham999@example.com",
+    },
+    {
+        "name": "Nang Seng Lean Peain",
+        "title": "Social Worker and Tech Related",
+        "email": "nang.senglean.pein@example.com",
+    },
+    {
+        "name": "Nang Kham Leang",
+        "title": "Teacher",
+        "email": "kendraleang7@gmail.com",
+    },
+    {
+        "name": "Zun Tharnt Phyu",
+        "title": "Teacher",
+        "email": "yuffe80@gmail.com",
+    },
+    {
+        "name": "Nang Yea Hseng Awn",
+        "title": "Teacher",
+        "email": "yeahsengawn@gmail.com",
+    },
+    {
+        "name": "Seng Pre",
+        "title": "Teacher",
+        "email": "sengzinbawk@gmail.com",
+    },
+    {
+        "name": "Nang Seng Si Hlieng",
+        "title": "Teacher",
+        "email": "nangsengsihlieng245206@gmail.com",
+    },
+    {
+        "name": "Nang Hom Noon",
+        "title": "Teacher",
+        "email": "zzar23382@gmail.com",
+    },
+    {
+        "name": "Nan Mwe Khung",
+        "title": "Teacher",
+        "email": "nanmwekhung261@gmail.com",
+    },
+    {
+        "name": "Lisha",
+        "title": "Teacher",
+        "email": "Lisha200529@gmail.com",
+    },
+    {
+        "name": "Seng Nu Ra",
+        "title": "Teacher",
+        "email": "emma2003132@gmail.com",
+    },
+    {
+        "name": "Kyar Aye",
+        "title": "Teacher",
+        "email": "seisimoonsimon@gmail.com",
+    },
+    {
+        "name": "Halena",
+        "title": "Teacher",
+        "email": "zaudoidu12345@gmail.com",
+    },
+    {
+        "name": "Nora",
+        "title": "Teacher",
+        "email": "sengluaaung@gmail.com",
+    },
+    {
+        "name": "Seint Phu Sin Kyaw",
+        "title": "Teacher",
+        "email": "seint0458@gmail.com",
+    },
+    {
+        "name": "Ying Mwe",
+        "title": "Teacher",
+        "email": "snowmwe488@gmail.com",
+    },
+    {
+        "name": "Gong Kham",
+        "title": "Teacher",
+        "email": "sengkon116@gmail.com",
+    },
+    {
+        "name": "Pau Bank Ra",
+        "title": "Teacher",
+        "email": "bawkr78@gmail.com",
+    },
+    {
+        "name": "Ying Mwe II",
+        "title": "Teacher",
+        "email": "ymwe349@gmail.com",
+    },
+    {
+        "name": "Aye Myat Mon",
+        "title": "Teacher",
+        "email": "mmonlay570@gmail.com",
+    },
+    {
+        "name": "Miwe Phoung",
+        "title": "Teacher",
+        "email": "mwephoung.97@gmail.com",
+    },
+    {
+        "name": "Htang Jar",
+        "title": "Teacher",
+        "email": "htangjar01@gmail.com",
+    }
+  ]
+  let displayedTeachers = 6;
+
+    function displayTeachers() {
+      teachers.slice(0, displayedTeachers).forEach((teacher) => {
+        const box = document.createElement('div');
+        box.classList.add('box');
+        box.innerHTML = `
+          <img src="" alt="">
+          <h3>${teacher.name}</h3>
+          <p>${teacher.title}</p>
+          <div class="share">
+            <a href="mailto:${teacher.email}" class="email-link">
+              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/gmail.svg" alt="Email" width="24" height="24">
+            </a>
+          </div>
+        `;
+        teacherContainer.appendChild(box);
+      });
+
+      if (displayedTeachers >= teachers.length) {
+        seeMoreBtn.classList.add('hidden');
+      }
+    }
+
+    displayTeachers();
+
+    seeMoreBtn.addEventListener('click', () => {
+      displayedTeachers += 3;
+      teacherContainer.innerHTML = '';
+      displayTeachers();
+    });
+    </script>
+  </main>
   
     <!-- footer -->
     <footer>
