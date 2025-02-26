@@ -1,6 +1,6 @@
 # Hone I Fa School 
 
-This is the repository for the website of Hone I Fa School, a elementary school located in NamKham,North Shan State.
+This is the repository for the website of Hone I Fa School, a elementary school located in North Shan State.
 
 ## Table of Contents
 - [Description](#description)
