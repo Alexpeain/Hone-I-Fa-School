@@ -113,9 +113,9 @@ section {
   border-radius: 0.5rem;
 }
 
-/* Hero / Homepage */
+/* Hero */
 .homepage {
-  margin-top: 10.5rem; /* offset fixed header */
+  margin-top: 10.5rem;
   background: var(--salmon);
   color: #fff;
   display: flex;
@@ -132,10 +132,6 @@ section {
 .homepage .motto h3 {
   font-size: 3.2rem;
   margin-bottom: 1.5rem;
-}
-
-.homepage .motto h3 span {
-  color: #fff;
 }
 
 .homepage .motto .motto-text {
@@ -407,11 +403,6 @@ section {
   background: var(--light-salmon);
 }
 
-/* See more button for teachers */
-.teacher .btn {
-  margin-top: 3rem;
-}
-
 /* Contact */
 #contact {
   padding: 7rem 7%;
@@ -464,10 +455,6 @@ section {
 .gallery-section {
   padding: 7rem 7%;
   background: #fafafa;
-}
-
-.gallery-section h2 {
-  margin-bottom: 3rem;
 }
 
 .gallery {
@@ -529,15 +516,6 @@ footer p {
   margin: 0;
 }
 
-footer a {
-  color: #333;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
 /* Utility */
 .hidden {
   display: none;
@@ -581,7 +559,6 @@ footer a:hover {
   .hero-ctas .btn,
   .contact-ctas .btn {
     width: 100%;
-    justify-content: center;
   }
 
   .header .header-2 .navbar a {
